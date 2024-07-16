@@ -44,6 +44,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -146,8 +147,13 @@ public class PageTwoActivity extends AppCompatActivity {
             @Override
             public void onStartFailure(int errorCode) {
                 Log.w(TAG, "LE Advertise Failed: " + errorCode);
-                TextView messaggio = (TextView)findViewById(R.id.TextViewMessaggio);
-                messaggio.setText("Advertising Fallito");
+                //TextView messaggio = (TextView)findViewById(R.id.TextViewMessaggio);
+                //messaggio.setText("Advertising Fallito");
+                CharSequence text = "C'è un nell'advertasing!";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(PageTwoActivity.this, text, duration);
+                toast.show();
+
             }
         };
          //End Define AdvertiseCallback
@@ -229,7 +235,11 @@ public class PageTwoActivity extends AppCompatActivity {
         if(controllo==false)
         {
 
-            messaggio.setText("C'è un problema nel gatt server");
+            //messaggio.setText("C'è un problema nel gatt server");
+            CharSequence text = "C'è un problema nel gatt server!";
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(this /* MyActivity */, text, duration);
+            toast.show();
         }
 
 
