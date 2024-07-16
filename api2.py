@@ -48,7 +48,7 @@ class Item(BaseModel):
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = "mongodb+srv://SimoneLavria:T4CtkD1h8LI6gSW3@cluster0.6b9wngj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://SimoneLavria:<password>@cluster0.6b9wngj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
