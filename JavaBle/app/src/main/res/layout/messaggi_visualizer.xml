@@ -41,7 +41,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="number"
-        android:text="inserisci id trattore.Se vuoi tutti inserisci ALL"
+        android:text="inserisci id trattore.Se vuoi tutti inserisci -1"
         app:layout_constraintBottom_toTopOf="@+id/TextViewMessaggio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
