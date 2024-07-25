@@ -218,7 +218,7 @@ public class PageTwoActivity extends AppCompatActivity {
                         savePublicly(s_primo);
                     }
                     String stringa_valore=messaggio.getText().toString();
-                    if(stringa_valore.equals("-1"))
+                    if(stringa_valore.equals("0"))
                     {
                         messaggio.setText(s);
                         String s_primo=s+'\n';
